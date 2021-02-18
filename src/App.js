@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Apples from "./Apples";
 
 function App() {
+  const name = "Jane Doe";
+  const day = "Friday";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        Shopping List for {name} to be bought on {day}
+      </h1>
+      <ul>
+        <li>Instagram</li>
+        <li>WhatsApp</li>
+        <li>Oculus</li>
+      </ul>
+      <Apples />
     </div>
   );
 }
